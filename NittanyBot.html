@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PSU Virtual Assistant</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1E407C; /* Penn State Blue */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .intro h2 {
+      color: #1E407C;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    .intro p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PSU Nittany Virtual Assistant</h1>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>
+        Meet <strong>Nittany</strong>, Penn State’s Virtual Assistant.  
+        This chatbot is here to help answer your questions about:
+      </p>
+      <ul>
+        <li>📋 Admissions & Registration</li>
+        <li>🏠 On-campus Housing & Meal Plans</li>
+        <li>🚌 Transportation & Parking</li>
+        <li>🏥 Student Health & Penn State Health</li>
+        <li>💰 Tuition & Financial Aid</li>
+        <li>🎓 Student Life & Activities</li>
+      </ul>
+      <p>
+        Just type or speak your question, and Nittany will provide guidance and links to official Penn State resources.  
+        If you need more help, the assistant can also connect you with the right office.
+      </p>
+    </section>
+  </main>
+
+  <!-- 👉 Paste your VAPI widget embed code below -->
+     <vapi-widget
+  public-key="14c3eade-6f80-43f1-9670-0348e3f8a249"
+  assistant-id="03d708b0-e11b-4c28-8ec6-4f568efffe48"
+  mode="chat"
+  theme="light"
+  base-bg-color="#ffffff"
+  accent-color="#4A4A4A"
+  cta-button-color="#ffffff"
+  cta-button-text-color="#000000"
+  border-radius="large"
+  size="full"
+  position="bottom-right"
+  title="Chat with PSU Nittany Virtual Assistant"
+  start-button-text="Start"
+  end-button-text="End Call"
+  chat-first-message="Hello, I'm Nittany the Virtual Assistant from Penn State - How Can I help you today?"
+  chat-placeholder="Type your message..."
+  voice-show-transcript="true"
+  consent-required="true"
+  consent-title="Terms and conditions"
+  consent-content="By clicking Agree, and each time I interact with this AI agent, I consent to the recording, storage, and sharing of my communications with third-party service providers, and as otherwise described in our Terms of Service."
+  consent-storage-key="vapi_widget_consent"
+></vapi-widget>
+
+<script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+  
+
+  <footer>
+    © 2025 Penn State University — Demo Virtual Assistant
+  </footer>
+
+</body>
+</html>
